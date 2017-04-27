@@ -45,14 +45,30 @@ class DraggableImageView: UIView {
     }
     
     @IBAction func onPan(_ sender: UIPanGestureRecognizer) {
+        let defaultRotationAngle: CGFloat = 5
+        let defaultRotationAngleInRadians = defaultRotationAngle * .pi / 180
+        
         let location = sender.location(in: self)
         let translation = sender.translation(in: self)
+        let velocity = sender.velocity(in: self)
         
         if sender.state == .began {
             print("Gesture began at: \(location)")
             originalCenter = sender.view?.center
         } else if sender.state == .changed {
             print("Gesture changed at: \(location)")
+
+            if location.y <= originalCenter.y {
+                let transform = CGAffineTransform(rotationAngle: CGFloat(defaultRotationAngleInRadians) * translation.x/100.0)
+                self.transform = transform
+                sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
+            } else {
+                let transform = CGAffineTransform(rotationAngle: CGFloat(-defaultRotationAngleInRadians) * translation.x/100.0)
+                self.transform = transform
+                sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
+            }
+            
+            
             sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
         } else if sender.state == .ended {
             
@@ -68,5 +84,4 @@ class DraggableImageView: UIView {
         // Drawing code
     }
     */
-
 }

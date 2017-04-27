@@ -1,6 +1,7 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
-options: "c3510b42298c6bb4b454f1b7adc75547"
-build_time: [546576802, 898099000]
+options: "2be696ba147f2d68a6d638ed92ac2f08"
+build_time: [546580654, 129175000]
 inputs:
   "/Users/zengr/dev/ios/codepath2/codepath-Tinder/codepath-Tinder/AppDelegate.swift": [546575359, 0]
-  "/Users/zengr/dev/ios/codepath2/codepath-Tinder/codepath-Tinder/CardsViewController.swift": [546576801, 0]
+  "/Users/zengr/dev/ios/codepath2/codepath-Tinder/codepath-Tinder/DraggableImageView.swift": [546580652, 0]
+  "/Users/zengr/dev/ios/codepath2/codepath-Tinder/codepath-Tinder/CardsViewController.swift": [546580373, 0]

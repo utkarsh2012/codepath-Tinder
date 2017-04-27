@@ -133,6 +133,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -152,19 +153,32 @@ SWIFT_CLASS("_TtC15codepath_Tinder11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
-@class UIPanGestureRecognizer;
+@class DraggableImageView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15codepath_Tinder19CardsViewController")
 @interface CardsViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
+@property (nonatomic, weak) IBOutlet DraggableImageView * _Null_unspecified customImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (IBAction)onPanGesture:(UIPanGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+@class UIImage;
+@class UIPanGestureRecognizer;
+
+SWIFT_CLASS("_TtC15codepath_Tinder18DraggableImageView")
+@interface DraggableImageView : UIView
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified contentView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
+@property (nonatomic, strong) UIImage * _Nullable image;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)initSubviews SWIFT_METHOD_FAMILY(none);
+- (IBAction)onPan:(UIPanGestureRecognizer * _Nonnull)sender;
 @end
 
 #pragma clang diagnostic pop
