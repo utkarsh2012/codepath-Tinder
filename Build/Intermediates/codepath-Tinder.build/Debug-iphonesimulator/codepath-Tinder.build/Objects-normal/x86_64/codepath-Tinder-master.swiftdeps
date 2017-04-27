@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "c29760c034f751bfccd5665dff26afad"
+build_time: [546575626, 240442000]
+inputs:
+  "/Users/zengr/dev/ios/codepath2/codepath-Tinder/codepath-Tinder/ViewController.swift": [546575359, 0]
+  "/Users/zengr/dev/ios/codepath2/codepath-Tinder/codepath-Tinder/AppDelegate.swift": [546575359, 0]
