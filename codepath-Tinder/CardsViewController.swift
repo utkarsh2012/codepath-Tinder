@@ -10,12 +10,18 @@ import UIKit
 
 class CardsViewController: UIViewController {
 
+    
+    @IBOutlet weak var customImageView: DraggableImageView!
+    
     var originalCenter: CGPoint!
-    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+        //customImageView = DraggableImageView(frame: CGRect(x: 20, y: 20, width: 304, height: 304))
+        customImageView.image = UIImage(named: "ryan")
+        //view.addSubview(customImageView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,18 +40,4 @@ class CardsViewController: UIViewController {
     }
     */
 
-    @IBAction func onPanGesture(_ sender: UIPanGestureRecognizer) {
-        let location = sender.location(in: view)
-        let translation = sender.translation(in: view)
-        
-        if sender.state == .began {
-            print("Gesture began at: \(location)")
-            originalCenter = imageView.center
-        } else if sender.state == .changed {
-            print("Gesture changed at: \(location)")
-            imageView.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
-        } else if sender.state == .ended {
-            
-        }
-    }
 }
