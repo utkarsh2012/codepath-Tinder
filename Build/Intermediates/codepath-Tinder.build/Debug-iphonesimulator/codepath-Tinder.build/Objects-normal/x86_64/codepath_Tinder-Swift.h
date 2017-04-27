@@ -152,13 +152,17 @@ SWIFT_CLASS("_TtC15codepath_Tinder11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UIPanGestureRecognizer;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC15codepath_Tinder14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC15codepath_Tinder19CardsViewController")
+@interface CardsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)onPanGesture:(UIPanGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/zengr/dev/ios/codepath2/codepath-Tinder/Build/Products/Debug-iphonesimulator/Pods_codepath_Tinder.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-codepath-Tinder-umbrella.h",
+          'external-contents': "/Users/zengr/dev/ios/codepath2/codepath-Tinder/Pods/Target Support Files/Pods-codepath-Tinder/Pods-codepath-Tinder-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_codepath_Tinder-Swift.h",
+          'external-contents': "/Users/zengr/dev/ios/codepath2/codepath-Tinder/Build/Products/Debug-iphonesimulator/Pods_codepath_Tinder.framework/Headers/Pods_codepath_Tinder-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/zengr/dev/ios/codepath2/codepath-Tinder/Build/Products/Debug-iphonesimulator/Pods_codepath_Tinder.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/zengr/dev/ios/codepath2/codepath-Tinder/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-codepath-Tinder.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

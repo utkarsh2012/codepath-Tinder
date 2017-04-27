@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2E5A441EB190CA007AD701 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E5A431EB190CA007AD701 /* CardsViewController.swift */; };
 		BFE1894F1EB18EFF00D489D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1894E1EB18EFF00D489D9 /* AppDelegate.swift */; };
-		BFE189511EB18EFF00D489D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE189501EB18EFF00D489D9 /* ViewController.swift */; };
 		BFE189541EB18EFF00D489D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE189521EB18EFF00D489D9 /* Main.storyboard */; };
 		BFE189561EB18EFF00D489D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE189551EB18EFF00D489D9 /* Assets.xcassets */; };
 		BFE189591EB18EFF00D489D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE189571EB18EFF00D489D9 /* LaunchScreen.storyboard */; };
@@ -17,9 +17,9 @@
 
 /* Begin PBXFileReference section */
 		1F13692554A595EE25565B77 /* Pods-codepath-Tinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codepath-Tinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-codepath-Tinder/Pods-codepath-Tinder.release.xcconfig"; sourceTree = "<group>"; };
+		BF2E5A431EB190CA007AD701 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		BFE1894B1EB18EFF00D489D9 /* codepath-Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-Tinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE1894E1EB18EFF00D489D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFE189501EB18EFF00D489D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFE189531EB18EFF00D489D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE189551EB18EFF00D489D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE189581EB18EFF00D489D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,11 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				BFE1894E1EB18EFF00D489D9 /* AppDelegate.swift */,
-				BFE189501EB18EFF00D489D9 /* ViewController.swift */,
 				BFE189521EB18EFF00D489D9 /* Main.storyboard */,
 				BFE189551EB18EFF00D489D9 /* Assets.xcassets */,
 				BFE189571EB18EFF00D489D9 /* LaunchScreen.storyboard */,
 				BFE1895A1EB18EFF00D489D9 /* Info.plist */,
+				BF2E5A431EB190CA007AD701 /* CardsViewController.swift */,
 			);
 			path = "codepath-Tinder";
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE189511EB18EFF00D489D9 /* ViewController.swift in Sources */,
 				BFE1894F1EB18EFF00D489D9 /* AppDelegate.swift in Sources */,
+				BF2E5A441EB190CA007AD701 /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +378,7 @@
 				BFE1895F1EB18EFF00D489D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
